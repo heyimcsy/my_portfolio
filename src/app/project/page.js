@@ -421,8 +421,9 @@ const PageNum = styled.div`
   .num {
     cursor: pointer;
     padding: 2px;
-  }
-  .num :hover {
-    color: rgb(255, 173, 126);
+
+    &:hover {
+      color: rgb(255, 173, 126);
+    }
   }
 `

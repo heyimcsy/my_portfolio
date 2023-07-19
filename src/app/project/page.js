@@ -41,20 +41,31 @@ function BigProject() {
           있습니다.
         </p>
         <div>
-          <a className="href" href="https://maanna-zan-fe-1.vercel.app/">
-            사이트: https://maanna-zan-fe-1.vercel.app/
-          </a>
+          <Flex>
+            <a className="hrefName">사이트:</a>
+            <a className="href" href="https://maanna-zan-fe-1.vercel.app/">
+              https://maanna-zan-fe-1.vercel.app/
+            </a>
+          </Flex>
+
           <br />
-          <a className="href" href="https://github.com/Maanna-zan/Maanna-zan_FE">
-            깃헙: https://github.com/Maanna-zan/Maanna-zan_FE
-          </a>
+          <Flex>
+            <a className="hrefName">깃헙:</a>
+            <a className="href" href="https://github.com/Maanna-zan/Maanna-zan_FE">
+              https://github.com/Maanna-zan/Maanna-zan_FE
+            </a>
+          </Flex>
         </div>
         <p>수행인원: 8명 (프론트 3명, 백 4명 , 디자이너 1명)</p>
         <p>진행기간: 23년 3월 31일 ~ 23년 5월 12일 (6주)</p>
         <p>역할: 부리더(프론트엔드 리더), 총무 , 발표자</p>
-        <a className="href" href="https://www.youtube.com/watch?v=XxAuNna20Bc">
-          발표영상: https://www.youtube.com/watch?v=XxAuNna20Bc
-        </a>
+        <Flex>
+          <a className="hrefName">발표영상:</a>
+          <a className="href" href="https://www.youtube.com/watch?v=XxAuNna20Bc">
+            https://www.youtube.com/watch?v=XxAuNna20Bc
+          </a>
+        </Flex>
+
         <p>Skill Set : React, JavaScript, Tanstack-query, Next.js ,Style-components ,Vercel ,Github</p>
         <hr className="line" />
         <ProjectOfFirst />
@@ -81,9 +92,12 @@ function MiniProject() {
           <br />이 웹사이트는 참여와 상호작용을 통한 재미를 제공하는 간단하면서도 독특한 엔터테인먼트 공간입니다.
         </p>
         <div>
-          <a className="href" href="https://github.com/heyimcsy/-project02_99_balanceGame-2">
-            깃헙: https://github.com/heyimcsy/-project02_99_balanceGame-2
-          </a>
+          <Flex>
+            <a className="hrefname"> 깃헙:</a>
+            <a className="href" href="https://github.com/heyimcsy/-project02_99_balanceGame-2">
+              https://github.com/heyimcsy/-project02_99_balanceGame-2
+            </a>
+          </Flex>
         </div>
         <p>수행인원: 6명 ( 프론트 3명 , 백 3명 ) </p>
         <p>진행기간: 23년 3월 17일 ~ 23년 5월 23일 (1주)</p>
@@ -334,6 +348,19 @@ function ProjectOfThird() {
     </DetailProject>
   )
 }
+const Flex = styled.div`
+  display: flex;
+  align-items: center;
+
+  .href {
+    height: fit-content;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .href:hover {
+    color: rgb(255, 173, 126);
+  }
+`
 const TotalSke = styled.div`
   width: 800px;
   margin: auto;
@@ -360,13 +387,6 @@ const TotalSke = styled.div`
     height: fit-content;
     text-align: left;
     margin-top: 2px;
-  }
-  .href {
-    height: fit-content;
-    cursor: pointer;
-  }
-  .href:hover {
-    color: rgb(255, 173, 126);
   }
 `
 const DetailProject = styled.div`

@@ -16,21 +16,29 @@ export default function Home() {
         <IntroTextBox>
           <div className="contentBox">
             <h2>--Contact--</h2>
-            <a>
-              <Span>Email:</Span> cinnamon1995@naver.com
-            </a>
-            <a>
-              <Span>Phone:</Span> 010-4122-8286{' '}
-            </a>
+            <Flex>
+              <a className="hrefName">Email: </a>
+              <a className="href">cinnamon1995@naver.com</a>
+            </Flex>
+            <Flex>
+              <a className="hrefName">Phone: </a>
+              <a className="href">010-4122-8286</a>
+            </Flex>
           </div>
           <div className="contentBox">
             <h2>--Channel--</h2>
-            <a href="https://github.com/heyimcsy">
-              <Span>Github:</Span> github.com/heyimcsy{' '}
-            </a>
-            <a href="https://seoyoonvely.tistory.com">
-              <Span>Blog:</Span> seoyoonvely.tistory.com
-            </a>
+            <Flex>
+              <a className="hrefName">Github: </a>
+              <a className="href" href="https://github.com/heyimcsy">
+                github.com/heyimcsy
+              </a>
+            </Flex>
+            <Flex>
+              <a className="hrefName">Blog: </a>
+              <a className="href" href="https://seoyoonvely.tistory.com">
+                seoyoonvely.tistory.com
+              </a>
+            </Flex>
           </div>
         </IntroTextBox>
       </Introbox>
@@ -136,9 +144,23 @@ const IntroTextBox = styled.div`
     flex-direction: column;
     row-gap: 10px;
   }
+  .hrefName {
+    color: rgb(255, 173, 126);
+  }
+  .href {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .href:hover {
+    color: rgb(255, 173, 126);
+  }
 `
-const Span = styled.span`
+const Span = styled.a`
   color: rgb(255, 173, 126);
+`
+const Flex = styled.div`
+  display: flex;
+  align-items: center;
 `
 
 const Introduce = styled.div`

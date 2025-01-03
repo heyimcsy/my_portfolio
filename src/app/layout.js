@@ -14,8 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <div>
-          <div className="navbar">
-            <div className="navLeft">
+          <div className="navBar">
               <Link className="navFont" href="/">
                 Home
               </Link>
@@ -25,10 +24,6 @@ export default function RootLayout({ children }) {
               <Link className="navFont" href="/education">
                 E.T.C
               </Link>
-            </div>
-            <Link className="navFont" href="/cotest">
-              TEST
-            </Link>
           </div>
           <hr className="navLine" />
         </div>

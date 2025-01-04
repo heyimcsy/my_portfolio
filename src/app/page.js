@@ -48,14 +48,27 @@ export default function Home() {
 }
 
 function Intro() {
-
+const intros = [
+  {
+  title: 'Introduce',
+  content: ' 1년 4개월 차 개발자로 AMR(자율 이동 로봇)회사에서 에디터를 개발하고 로봇들을 관리하는 웹을 보수유지 하였습니다.React와 TypeScript 및 THREE.js를 이용해 에디터를 만들어 다양한 기술을 접목할 수 있는 능력이 있습니다.새로운 기술을 접하더라도, 능동적으로 습득하려고 노력을 합니다. 새로운 지식을 습득하는 것을 좋아하고 ,부족한 점을 찾아 메꾸어 가는 노력을 할 수 있는 성장형 개발자입니다.'
+},
+  {
+    title: 'Introduce1',
+    content: ' 1년 4개월 차 개발자로 AMR(자율 이동 로봇)회사에서 에디터를 개발하고 로봇들을 관리하는 웹을 보수유지 하였습니다.React와 TypeScript 및 THREE.js를 이용해 에디터를 만들어 다양한 기술을 접목할 수 있는 능력이 있습니다.새로운 기술을 접하더라도, 능동적으로 습득하려고 노력을 합니다. 새로운 지식을 습득하는 것을 좋아하고 ,부족한 점을 찾아 메꾸어 가는 노력을 할 수 있는 성장형 개발자입니다.'
+  },
+]
   return (
-    <IntroTextBox>
-      <h1>Introduce</h1>
-      <div style={{border: '1px solid green', height: 'auto', width: '600px'}}>
-        1년 4개월 차 개발자로 AMR(자율 이동 로봇)회사에서 웹과 에디터를 개발 및 보수유지 하였습니다.
-      </div>
-    </IntroTextBox>
+    <>
+      {intros.map((data)=> (
+        <IntroTextBox>
+          <h1>{data.title}</h1>
+          <div style={{ height: 'auto', width: '650px' }}>
+            {data.content}
+          </div>
+        </IntroTextBox>
+      ))}
+    </>
   )
 }
 
@@ -74,9 +87,11 @@ const Introbox = styled.div`
 `
 const IntroTextBox = styled.div`
   display: flex;
-  padding: 50px;
+  padding: 45px;
   border: 3px solid black;
   border-radius: 50px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   flex-direction: column;
   row-gap: 50px;
   .contentBox {

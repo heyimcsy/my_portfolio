@@ -62,7 +62,7 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background-color: #feffc8;
+  background-color: #fffbec;
 }
 
 a {
@@ -107,7 +107,3 @@ a {
   justify-content: center;
 }
 
-.profileImage {
-  width: 350px;
-  height: 350px;
-}

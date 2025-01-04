@@ -12,7 +12,7 @@ export default function Home() {
         성장을 지향하는 프론트엔드 개발자 <Span>최서윤</Span> 입니다.
       </HeadIntro>
       <Introbox>
-        <Image src={seoyoon} alt="프로필사진" className="profileImage" />
+        <Image src={seoyoon} alt="프로필사진" className="profileImage" width={350}/>
         <IntroTextBox>
           <div className="contentBox">
             <h2>--Contact--</h2>
@@ -51,7 +51,7 @@ function Intro() {
 const intros = [
   {
   title: 'Introduce',
-  content: ' 1년 4개월 차 개발자로 AMR(자율 이동 로봇)회사에서 에디터를 개발하고 로봇들을 관리하는 웹을 보수유지 하였습니다.React와 TypeScript 및 THREE.js를 이용해 에디터를 만들어 다양한 기술을 접목할 수 있는 능력이 있습니다.새로운 기술을 접하더라도, 능동적으로 습득하려고 노력을 합니다. 새로운 지식을 습득하는 것을 좋아하고 ,부족한 점을 찾아 메꾸어 가는 노력을 할 수 있는 성장형 개발자입니다.'
+  content: '저는 1년 4개월 차 프론트엔드 개발자로, AMR(자율 이동 로봇) 회사에서 에디터 개발과 로봇 관리 웹의 유지보수를 담당했습니다. React, TypeScript, 그리고 Three.js를 활용하여 에디터를 구현하며, 다양한 기술을 접목하고 문제를 해결하는 경험을 쌓았습니다.새로운 기술에 대한 학습과 적용에 적극적이며, 이를 통해 프로젝트에 기여할 수 있는 능동적인 자세를 갖추고 있습니다. 부족한 점은 스스로 찾아 개선하며 꾸준히 성장해 나가는 개발자로서, 항상 더 나은 결과를 만들어 내기 위해 노력하고 있습니다.'
 },
   {
     title: 'Introduce1',

@@ -50,25 +50,72 @@ export default function Home() {
 function Intro() {
 	const intros = [
 		{
+			title: 'Introduce',
+			content: [
+				'저는 1년 4개월 차 프론트엔드 개발자로, AMR(자율 이동 로봇) 회사에서 에디터 개발과 로봇 관리 웹의 유지보수를 담당했습니다.',
+				'새로운 기술에 대한 학습과 적용에 적극적이며, 이를 통해 프로젝트에 기여할 수 있는 능동적인 자세를 갖추고 있습니다.',
+				' 부족한 점은 스스로 찾아 개선하며 꾸준히 성장해 나가는 개발자로서, 항상 더 나은 결과를 만들어 내기 위해 노력하고 있습니다.',
+			],
+		},
+		{
 			title: 'Career',
 			content: '티라로보틱스 ( 2023년 9월 1일 - 2024년 11월 30일 )',
 		},
 		{
 			title: 'Skills',
-			content: 'React, Java script',
+			content: 'React, Java-Script, Next.js, React-query, THREE.js, Recoil, Redux , Git',
 		},
 		{
-			title: 'Introduce',
-			content:
-				'저는 1년 4개월 차 프론트엔드 개발자로, AMR(자율 이동 로봇) 회사에서 에디터 개발과 로봇 관리 웹의 유지보수를 담당했습니다. React, TypeScript, 그리고 Three.js를 활용하여 에디터를 구현하며, 다양한 기술을 접목하고 문제를 해결하는 경험을 쌓았습니다.새로운 기술에 대한 학습과 적용에 적극적이며, 이를 통해 프로젝트에 기여할 수 있는 능동적인 자세를 갖추고 있습니다. 부족한 점은 스스로 찾아 개선하며 꾸준히 성장해 나가는 개발자로서, 항상 더 나은 결과를 만들어 내기 위해 노력하고 있습니다.',
+			title: 'Education',
+			array: [
+				{
+					h3: '한국방송통신대학교',
+					subContent: '2024.03 3학년 입학 예정',
+					content: '컴퓨터 과학과',
+				},
+				{
+					h3: '국민대학교',
+					subContent: '2017.03 ~ 2022.02 졸업',
+					content: '의상 디자인과',
+				},
+			],
 		},
 	];
 	return (
 		<>
 			{intros.map((data) => (
 				<IntroTextBox>
-					<h1>{data.title}</h1>
-					<div style={{ height: 'auto', width: '650px' }}>{data.content}</div>
+					{data.array ? (
+						<>
+							<h1>{data.title}</h1>
+							{data.array.map((content) => (
+								<>
+									<div style={{ height: 'auto', width: '650px' }}>
+										<h3>{content.h3}</h3>
+										<p style={{ marginTop: '12px', color: '#af9a91', fontSize: '14px' }}>
+											{content.subContent}
+										</p>
+										<p style={{ marginTop: '12px' }}>{content.content}</p>
+									</div>
+								</>
+							))}
+						</>
+					) : (
+						<>
+							<h1>{data.title}</h1>
+							<div style={{ height: 'auto', width: '650px' }}>
+								{typeof data.content === 'object' ? (
+									data.content.map((content, index) => (
+										<p style={{ marginTop: '5px' }} key={index}>
+											{content}
+										</p>
+									))
+								) : (
+									<>{data.content}</>
+								)}
+							</div>
+						</>
+					)}
 				</IntroTextBox>
 			))}
 		</>
@@ -90,7 +137,7 @@ const Introbox = styled.div`
 `;
 const IntroTextBox = styled.div`
 	display: flex;
-	padding: 45px;
+	padding: 30px 45px;
 	border: 3px solid black;
 	border-radius: 50px;
 	margin-top: 15px;

@@ -7,7 +7,7 @@ const Project = () => {
 	const [projectPage, setProjectPage] = useState(false);
 	return (
 		<div>
-			{projectPage ? <ThiraProject /> : <BigProject />}
+			{projectPage ? <Thira_Project /> : <BigProject />}
 			<PageNum>
 				<a className="num" onClick={() => setProjectPage(false)}>
 					1
@@ -23,60 +23,48 @@ const Project = () => {
 
 export default Project;
 
-function ThiraProject() {
+function Thira_Project() {
 	return (
 		<TotalSke>
 			<h1 className="project">Thirarobotics</h1>
 			<h2 className="project_name">Map Editor 개발</h2>
 			<div className="gap">
 				<p className="explain">
-					지도 기반의 소셜 네트워킹 플랫폼으로, 그룹 멤버들의 중간 위치를 찾아내고 주변의 술집을
-					추천하는 독특한 기능을 제공합니다.
+					AMR(자율 이동 로봇)을 조이스틱으로 조작하여 내장된 카메라로 장소를 스캔하고, 이를 기반으로
+					맵을 생성하는 Map Editor를 개발했습니다.
 					<br />
-					최대 4명의 사용자가 모임을 계획할 때, 서비스는 모든 사용자에게 편리한 중간 지점을
-					찾아줍니다.
+					생성된 맵의 이미지를 편집하고, 로봇의 동선을 설계할 수 있는 기능을 구현했습니다.
 					<br />
-					또한, 이 서비스는 사용자들에게 주변 술집에 대한 정보를 제공하고, 다른 사용자들이 남긴
-					리뷰를 통해 각 술집의 평판을 확인할 수 있게 합니다.
+					맵 생성 및 관리 페이지를 React-query를 사용하여 개발했으며,
 					<br />
-					사용자들은 자신이 좋아하는 술집과 리뷰를 '좋아요'로 표시할 수 있으며, 이런 정보는 개인의
-					'마이 페이지'에서 확인할 수 있습니다.
+					Three.js를 활용해 맵 위에 오브젝트를 생성, 수정할 수 있는 기능을 추가했습니다.
+					<br />
+					또한, Canvas와 Three.js를 결합하여 화면에 그림을 그리거나 이미지를 추출하는 기능을
+					구현했습니다.
 				</p>
-				<div>
-					<Flex>
-						<a className="hrefName">사이트:</a>
-						<a className="href" href="https://maanna-zan-fe-1.vercel.app/">
-							https://maanna-zan-fe-1.vercel.app/
-						</a>
-					</Flex>
-
+				<p>진행 기간: 2024년 6월 ~ 2024년 11월</p>
+				<p>기술 스택: React, TypeScript, React-query, Three.js, GitLab</p>
+				<hr className="line" />
+			</div>
+			<h2 style={{ marginTop: '20px' }} className="project_name">
+				Map Editor 개발
+			</h2>
+			<div className="gap">
+				<p className="explain">
+					AMR(자율 이동 로봇)을 조이스틱으로 조작하여 내장된 카메라로 장소를 스캔하고, 이를 기반으로
+					맵을 생성하는 Map Editor를 개발했습니다.
 					<br />
-					<Flex>
-						<a className="hrefName">깃헙:</a>
-						<a className="href" href="https://github.com/Maanna-zan/Maanna-zan_FE">
-							https://github.com/Maanna-zan/Maanna-zan_FE
-						</a>
-					</Flex>
-				</div>
-				<p>수행인원: 8명 (프론트 3명, 백 4명 , 디자이너 1명)</p>
-				<p>진행기간: 23년 3월 31일 ~ 23년 5월 12일 (6주)</p>
-				<p>역할: 부리더(프론트엔드 리더), 총무 , 발표자</p>
-				<Flex>
-					<a className="hrefName">발표영상:</a>
-					<a className="href" href="https://www.youtube.com/watch?v=XxAuNna20Bc">
-						https://www.youtube.com/watch?v=XxAuNna20Bc
-					</a>
-				</Flex>
-
-				<p>
-					Skill Set : React, JavaScript, Tanstack-query, Next.js ,Style-components ,Vercel ,Github
+					생성된 맵의 이미지를 편집하고, 로봇의 동선을 설계할 수 있는 기능을 구현했습니다.
+					<br />
+					맵 생성 및 관리 페이지를 React-query를 사용하여 개발했으며,
+					<br />
+					Three.js를 활용해 맵 위에 오브젝트를 생성, 수정할 수 있는 기능을 추가했습니다.
+					<br />
+					또한, Canvas와 Three.js를 결합하여 화면에 그림을 그리거나 이미지를 추출하는 기능을
+					구현했습니다.
 				</p>
-				<hr className="line" />
-				<ProjectOfFirst />
-				<hr className="line" />
-				<ProjectOfSecond />
-				<hr className="line" />
-				<ProjectOfThird />
+				<p>진행 기간: 2024년 6월 ~ 2024년 11월</p>
+				<p>기술 스택: React, TypeScript, React-query, Three.js, GitLab</p>
 				<hr className="line" />
 			</div>
 		</TotalSke>

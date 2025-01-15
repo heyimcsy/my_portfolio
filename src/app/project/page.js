@@ -7,7 +7,7 @@ const Project = () => {
 	const [projectPage, setProjectPage] = useState(false);
 	return (
 		<div>
-			{projectPage ? <MiniProject /> : <BigProject />}
+			{projectPage ? <ThiraProject /> : <BigProject />}
 			<PageNum>
 				<a className="num" onClick={() => setProjectPage(false)}>
 					1
@@ -16,16 +16,72 @@ const Project = () => {
 				<a className="num" onClick={() => setProjectPage(true)}>
 					2
 				</a>
-				<a className="num">,</a>
-				<a className="num" onClick={() => setProjectPage(true)}>
-					3
-				</a>
 			</PageNum>
 		</div>
 	);
 };
 
 export default Project;
+
+function ThiraProject() {
+	return (
+		<TotalSke>
+			<h1 className="project">Thirarobotics</h1>
+			<h2 className="project_name">Map Editor 개발</h2>
+			<div className="gap">
+				<p className="explain">
+					지도 기반의 소셜 네트워킹 플랫폼으로, 그룹 멤버들의 중간 위치를 찾아내고 주변의 술집을
+					추천하는 독특한 기능을 제공합니다.
+					<br />
+					최대 4명의 사용자가 모임을 계획할 때, 서비스는 모든 사용자에게 편리한 중간 지점을
+					찾아줍니다.
+					<br />
+					또한, 이 서비스는 사용자들에게 주변 술집에 대한 정보를 제공하고, 다른 사용자들이 남긴
+					리뷰를 통해 각 술집의 평판을 확인할 수 있게 합니다.
+					<br />
+					사용자들은 자신이 좋아하는 술집과 리뷰를 '좋아요'로 표시할 수 있으며, 이런 정보는 개인의
+					'마이 페이지'에서 확인할 수 있습니다.
+				</p>
+				<div>
+					<Flex>
+						<a className="hrefName">사이트:</a>
+						<a className="href" href="https://maanna-zan-fe-1.vercel.app/">
+							https://maanna-zan-fe-1.vercel.app/
+						</a>
+					</Flex>
+
+					<br />
+					<Flex>
+						<a className="hrefName">깃헙:</a>
+						<a className="href" href="https://github.com/Maanna-zan/Maanna-zan_FE">
+							https://github.com/Maanna-zan/Maanna-zan_FE
+						</a>
+					</Flex>
+				</div>
+				<p>수행인원: 8명 (프론트 3명, 백 4명 , 디자이너 1명)</p>
+				<p>진행기간: 23년 3월 31일 ~ 23년 5월 12일 (6주)</p>
+				<p>역할: 부리더(프론트엔드 리더), 총무 , 발표자</p>
+				<Flex>
+					<a className="hrefName">발표영상:</a>
+					<a className="href" href="https://www.youtube.com/watch?v=XxAuNna20Bc">
+						https://www.youtube.com/watch?v=XxAuNna20Bc
+					</a>
+				</Flex>
+
+				<p>
+					Skill Set : React, JavaScript, Tanstack-query, Next.js ,Style-components ,Vercel ,Github
+				</p>
+				<hr className="line" />
+				<ProjectOfFirst />
+				<hr className="line" />
+				<ProjectOfSecond />
+				<hr className="line" />
+				<ProjectOfThird />
+				<hr className="line" />
+			</div>
+		</TotalSke>
+	);
+}
 
 function BigProject() {
 	return (
@@ -240,7 +296,6 @@ function ProjectOfFirst() {
 function ProjectOfSecond() {
 	const [projectOfSecond1, setProjectOfSecond1] = useState(false);
 	const [projectOfSecond2, setProjectOfSecond2] = useState(false);
-
 	const [projectOfSecond3, setProjectOfSecond3] = useState(false);
 
 	return (

@@ -6,7 +6,7 @@ const Project = () => {
 	const [projectPage, setProjectPage] = useState(false);
 	return (
 		<div>
-			{projectPage ? <Thira_Project /> : <BigProject />}
+			{projectPage ? <BigProject /> : <Thira_Project />}
 			<PageNum>
 				<a className="num" onClick={() => setProjectPage(false)}>
 					1
@@ -43,6 +43,25 @@ function Thira_Project() {
 				</p>
 				<p>진행 기간: 2024년 6월 ~ 2024년 11월</p>
 				<p>기술 스택: React, TypeScript, React-query, Three.js, GitLab</p>
+				<hr className="line" />
+			</div>
+			<h2 style={{ marginTop: '20px' }} className="project_name">
+				FMS(Zone Management)
+			</h2>
+			<div className="gap">
+				<p className="explain">
+					여러 대의 AMR(자율 이동 로봇)을 제어하고 관리하는 FMS(Fleet Management System)의 전체적인
+					버그를 수정했습니다.
+					<br />
+					150개 이상의 버그를 한 달 반 동안 수정하며 안정성을 대폭 개선했습니다.
+					<br />
+					FMS는 약 20개의 탭으로 구성된 복잡한 프로그램으로, 각 탭의 프로세스를 점검하고 필요에 따라
+					전체 리팩토링을 진행했습니다.
+					<br />
+					이를 통해 보다 자연스러운 사용자 경험을 제공했습니다.
+				</p>
+				<p>진행 기간: 2024년 3월 ~ 2024년 4월</p>
+				<p>기술 스택: JavaScript, jQuery, GitLab</p>
 				<hr className="line" />
 			</div>
 			<h2 style={{ marginTop: '20px' }} className="project_name">

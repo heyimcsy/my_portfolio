@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import { styled } from 'styled-components';
 
-//TODO: pagination 부터 아예 갈아엎기
 const Project = () => {
 	const [projectPage, setProjectPage] = useState(false);
 	return (
@@ -47,24 +46,22 @@ function Thira_Project() {
 				<hr className="line" />
 			</div>
 			<h2 style={{ marginTop: '20px' }} className="project_name">
-				Map Editor 개발
+				FMS(Bug Fix)
 			</h2>
 			<div className="gap">
 				<p className="explain">
-					AMR(자율 이동 로봇)을 조이스틱으로 조작하여 내장된 카메라로 장소를 스캔하고, 이를 기반으로
-					맵을 생성하는 Map Editor를 개발했습니다.
+					여러 대의 AMR(자율 이동 로봇)을 제어하고 관리하는 FMS(Fleet Management System)의 전체적인
+					버그를 수정했습니다.
 					<br />
-					생성된 맵의 이미지를 편집하고, 로봇의 동선을 설계할 수 있는 기능을 구현했습니다.
+					150개 이상의 버그를 한 달 반 동안 수정하며 안정성을 대폭 개선했습니다.
 					<br />
-					맵 생성 및 관리 페이지를 React-query를 사용하여 개발했으며,
+					FMS는 약 20개의 탭으로 구성된 복잡한 프로그램으로, 각 탭의 프로세스를 점검하고 필요에 따라
+					전체 리팩토링을 진행했습니다.
 					<br />
-					Three.js를 활용해 맵 위에 오브젝트를 생성, 수정할 수 있는 기능을 추가했습니다.
-					<br />
-					또한, Canvas와 Three.js를 결합하여 화면에 그림을 그리거나 이미지를 추출하는 기능을
-					구현했습니다.
+					이를 통해 보다 자연스러운 사용자 경험을 제공했습니다.
 				</p>
-				<p>진행 기간: 2024년 6월 ~ 2024년 11월</p>
-				<p>기술 스택: React, TypeScript, React-query, Three.js, GitLab</p>
+				<p>진행 기간: 2024년 3월 ~ 2024년 4월</p>
+				<p>기술 스택: JavaScript, jQuery, GitLab</p>
 				<hr className="line" />
 			</div>
 		</TotalSke>

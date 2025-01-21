@@ -50,15 +50,10 @@ function Thira_Project() {
 			</h2>
 			<div className="gap">
 				<p className="explain">
-					여러 대의 AMR(자율 이동 로봇)을 제어하고 관리하는 FMS(Fleet Management System)의 전체적인
-					버그를 수정했습니다.
+					여러 대의 AMR(자율 이동 로봇)을 제어하고 관리하는 FMS(Fleet Management System)
+					프로젝트입니다.
 					<br />
-					150개 이상의 버그를 한 달 반 동안 수정하며 안정성을 대폭 개선했습니다.
-					<br />
-					FMS는 약 20개의 탭으로 구성된 복잡한 프로그램으로, 각 탭의 프로세스를 점검하고 필요에 따라
-					전체 리팩토링을 진행했습니다.
-					<br />
-					이를 통해 보다 자연스러운 사용자 경험을 제공했습니다.
+					관리하는 창고의 zone 구역의 따른 관리를 하는 페이지를 만들었습니다.
 				</p>
 				<p>진행 기간: 2024년 3월 ~ 2024년 4월</p>
 				<p>기술 스택: JavaScript, jQuery, GitLab</p>
@@ -88,15 +83,10 @@ function Thira_Project() {
 			</h2>
 			<div className="gap">
 				<p className="explain">
-					여러 대의 AMR(자율 이동 로봇)을 제어하고 관리하는 FMS(Fleet Management System)의 전체적인
-					버그를 수정했습니다.
+					여러 대의 AMR(자율 이동 로봇)을 제어하고 관리하는 FMS(Fleet Management System)
+					프로젝트입니다.
 					<br />
-					150개 이상의 버그를 한 달 반 동안 수정하며 안정성을 대폭 개선했습니다.
-					<br />
-					FMS는 약 20개의 탭으로 구성된 복잡한 프로그램으로, 각 탭의 프로세스를 점검하고 필요에 따라
-					전체 리팩토링을 진행했습니다.
-					<br />
-					이를 통해 보다 자연스러운 사용자 경험을 제공했습니다.
+					관리하는 창고의 bay를 생성하고 관리하는 페이지를 만들었습니다.
 				</p>
 				<p>진행 기간: 2024년 3월 ~ 2024년 4월</p>
 				<p>기술 스택: JavaScript, jQuery, GitLab</p>

@@ -88,7 +88,7 @@ function Thira_Project() {
 					<br />
 					관리하는 창고의 bay를 생성하고 관리하는 페이지를 만들었습니다.
 				</p>
-				<p>진행 기간: 2024년 3월 ~ 2024년 4월</p>
+				<p>진행 기간: 2024년 2월 ~ 2024년 3월</p>
 				<p>기술 스택: JavaScript, jQuery, GitLab</p>
 				<hr className="line" />
 			</div>
